@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.item{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  width: 100%;
+
+}
+
+.item:first-child{
+  margin-top: 10rem;
+}
+
+.title{
+  text-align: center;
+  margin-top: 5rem; margin-bottom: 2rem;
+}
+
+.Box{
+  border: 1px solid black;
+  width: 40%;
+  height: 500px;
+  margin: 2px;
+}
+
+.Box img{
+  width: 80%;
+  height: 60%;
+}
+
+.Box .name{
+  padding: 8px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+
+
+.btn{
+  padding: 10px;  margin: 5px;
+  width: 80px;
+  background-color: black; color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+.btn:hover{
+  background-color: rgb(112, 110, 110);
+}
+.btn:focus{
+  background-color: rgb(247, 65, 65);
+}
+
+
+.Win{
+  background-color: rgb(68, 111, 255);
   color: white;
+  width: 100%;
+  height: 500px;
 }
-
-.App-link {
-  color: #61dafb;
+.Lose{
+  background-color: orange;
+  color: white;
+  width: 100%;
+  height: 500px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Draw{
+  background-color: greenyellow;
+  width: 100%;
+  height: 500px
 }
